@@ -63,6 +63,9 @@ Route::get(
     }
 );*/
 //Tercera parte
+//haciendo uso de la funcion view se 
+//retornan las vista desde el origen comun 
+//(resources/views/*)
 Route::get(
     '/',
     function()
