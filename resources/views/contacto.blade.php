@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Contacto</title>
-    </head>
-    <body>
-        <h1>Contacto</h1>
-    </body>
-</html>
+@extends('plantilla')
+@section('Titulo', 'Contacto')
+@section('content')
+    <h1>Contacto</h1>
+@endsection

@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>¿Quiénes somos?</title>
-    </head>
-    <body>
-        <h1>¿Quiénes somos?</h1>
-    </body>
-</html>
+@extends('plantilla')
+@section('Titulo', '¿Quiénes somos?')
+@section('content')
+    <h1>¿Quiénes somos?</h1>
+@endsection
