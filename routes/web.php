@@ -10,9 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+$misProyectos =
+[
+    ['titulo'=>'Laravel'],
+    ['titulo'=>'Slim'],
+    ['titulo'=>'Otro']
+];
 Route::view('/', 'inicio')->name('inicio');
 Route::view('/quienessomos', 'quienes')->name('quienes');
-Route::view('/proyectos', 'proyectos')->name('proyectos');
+Route::view('/proyectos', 'proyectos', ['proyectos'=>$misProyectos])->name('proyectos');
 Route::view('/contacto', 'contacto')->name('contacto');
 
