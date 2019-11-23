@@ -1,0 +1,1 @@
+Estoy en el archivo <strong>home.php</strong>
