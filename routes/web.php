@@ -68,10 +68,18 @@ Route::get(
 //(resources/views/*)
 //sintaxis para sub directorios return view(‘proyectos.proyecto_a’);
 //donde proyectos es el nombre de la sub carpeta
-Route::get(
+/*Route::get(
     '/',
     function()
     {
-        return view('home');
+        $nombre ='Nerio Alfonso';
+        //esta forma solo fucionó modificando el archivo a home.blade.php
+        //return view('home')->with('nombre', $nombre);
+        //return view('home')->with(['nombre'=>$nombre]);
+        return view('home', ['nombre'=>$nombre]);
+
     }
-)->name('inicio');
+)->name('inicio');*/
+//sintaxis contraida para routing
+Route::view('/', 'home', ['nombre'=>'Nerio Alfonso'])->name('inicio');
+
