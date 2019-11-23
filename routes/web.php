@@ -66,6 +66,8 @@ Route::get(
 //haciendo uso de la funcion view se 
 //retornan las vista desde el origen comun 
 //(resources/views/*)
+//sintaxis para sub directorios return view(‘proyectos.proyecto_a’);
+//donde proyectos es el nombre de la sub carpeta
 Route::get(
     '/',
     function()
